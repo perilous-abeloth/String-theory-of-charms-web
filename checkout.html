@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Details | String Theory of Charms</title>
+  <link rel="stylesheet" href="store.css">
+  <script src="store.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="logo.png" alt=""><span>String Theory<br>of Charms</span></a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a></nav>
+    <a class="cart-link" href="cart.html" aria-label="Shopping cart, items: "><span aria-hidden="true">🛍</span> Cart <span data-cart-count>0</span></a>
+  </header>
+  <main class="page-main">
+    <section class="page-intro"><p class="eyebrow">Almost yours</p><h1>Order details</h1><p>Review your items and add your contact details. This prepares an email request; payment and delivery are confirmed separately.</p></section>
+    <section class="page-section form-layout">
+      <div>
+        <div class="empty-state" data-checkout-empty hidden><h2>Your cart is empty</h2><p>Add something to your cart before starting an order.</p><a class="primary-link" href="shop.html">Browse the collection</a></div>
+        <form class="site-form" data-mailto-form="order" data-checkout-form hidden>
+          <div class="field"><label for="order-name">Full name</label><input id="order-name" name="Name" autocomplete="name" required></div>
+          <div class="field"><label for="order-email">Email address</label><input id="order-email" name="Email" type="email" autocomplete="email" required></div>
+          <div class="field"><label for="order-phone">Phone number</label><input id="order-phone" name="Phone" type="tel" autocomplete="tel" required></div>
+          <div class="field"><label for="order-address">Delivery or meetup details</label><textarea id="order-address" name="Delivery or meetup details" autocomplete="street-address" required></textarea></div>
+          <div class="field"><label for="order-notes">Customization notes <span class="fine-print">(optional)</span></label><textarea id="order-notes" name="Customization notes"></textarea></div>
+          <button class="primary-button" type="submit">Prepare order email</button>
+          <p class="form-help">Your email app opens with your cart and details included. Your cart stays saved until the order is confirmed.</p>
+        </form>
+      </div>
+      <aside class="order-summary">
+        <h2>Items in your order</h2>
+        <ul class="checkout-lines" data-checkout-items></ul>
+        <div class="summary-line total"><span>Estimated total</span><strong data-checkout-total>₱0</strong></div>
+        <p class="fine-print">Shipping or meetup arrangements will be confirmed by email. No online payment is collected.</p>
+      </aside>
+    </section>
+  </main>
+  <p class="notice" data-notice role="status" aria-live="polite" hidden></p>
+  <footer class="site-footer"><img src="logo.png" alt="String Theory of Charms"><span>Customizable · Durable · Stylish</span><span>© <span data-year></span> String Theory of Charms</span><a href="cart.html">Back to cart</a></footer>
+</body>
+</html>

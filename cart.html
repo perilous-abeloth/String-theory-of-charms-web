@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Cart | String Theory of Charms</title>
+  <link rel="stylesheet" href="store.css">
+  <script src="store.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><img src="logo.png" alt=""><span>String Theory<br>of Charms</span></a>
+    <nav class="site-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">Our Story</a><a href="contact.html">Contact</a></nav>
+    <a class="cart-link" href="cart.html" aria-current="page" aria-label="Shopping cart, items: "><span aria-hidden="true">🛍</span> Cart <span data-cart-count>0</span></a>
+  </header>
+  <main class="page-main">
+    <section class="page-intro"><p class="eyebrow">Your picks</p><h1>Your cart</h1><p>Adjust quantities or remove anything before sending your order request.</p></section>
+    <section class="page-section cart-layout" aria-label="Shopping cart">
+      <div>
+        <div class="cart-list" data-cart-list></div>
+        <div class="empty-state" data-cart-empty hidden><h2>Your cart is empty</h2><p>Find a charm or accessory to get started.</p><a class="primary-link" href="shop.html">Browse the collection</a></div>
+      </div>
+      <aside class="order-summary" data-cart-summary hidden>
+        <h2>Order summary</h2>
+        <div class="summary-line"><span>Subtotal</span><strong data-cart-subtotal>₱0</strong></div>
+        <p class="fine-print">Delivery and final details will be confirmed by email. No payment is collected on this demo site.</p>
+        <a class="primary-link" data-checkout-link href="checkout.html">Continue to order details</a>
+      </aside>
+    </section>
+  </main>
+  <p class="notice" data-notice role="status" aria-live="polite" hidden></p>
+  <footer class="site-footer"><img src="logo.png" alt="String Theory of Charms"><span>Customizable · Durable · Stylish</span><span>© <span data-year></span> String Theory of Charms</span><a href="index.html">Home</a></footer>
+</body>
+</html>
