@@ -70,7 +70,7 @@ section.products{padding:45px clamp(20px,6vw,90px)}
 .cart-item-icon{overflow:hidden;width:76px;height:76px;border-radius:6px;background:#eee6f7;flex-shrink:0}
 .cart-item-icon img{width:100%;height:100%;object-fit:cover;display:block}
 .cart-item-info h2{margin:0 0 5px;font-size:16px;color:var(--deep)}
-.cart-item-info p{margin:0 0 7px;color:var(--muted);font-size:13px;line-height:1.4}
+.cart-item-info p{margin:0 0 7px;color:var(--muted);font-size:12px;line-height:1.4}
 .text-button{padding:0;border:0;background:none;color:#8b4357;text-decoration:underline;font:600 13px Arial,Helvetica,sans-serif;cursor:pointer}
 .quantity-control{display:flex;align-items:center;gap:12px}
 .quantity-control button{width:32px;height:32px;border:1px solid var(--line);border-radius:4px;background:white;color:var(--deep);font-size:18px;cursor:pointer}
