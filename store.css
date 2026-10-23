@@ -1,6 +1,6 @@
 :root{--purple:#594b83;--deep:#392b62;--lav:#e9e1f3;--pink:#f4dce2;--cream:#fbf7f2;--ink:#302844;--line:#e2d9e9;--muted:#70697a;--green:#386658}
 *{box-sizing:border-box}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:Serif,Helvetica,sans-serif}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
 a{color:inherit}
 .site-header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:10px clamp(18px,6vw,90px);background:#fffaf6;position:sticky;top:0;z-index:5;box-shadow:0 2px 14px #392b6210}
 .brand{display:flex;align-items:center;gap:10px;color:var(--deep);font-size:15px;font-weight:800;line-height:1.1;text-decoration:none;flex:none}
@@ -42,7 +42,8 @@ section.products{padding:45px clamp(20px,6vw,90px)}
 .filter.active,.filter:hover{background:var(--deep);border-color:var(--deep);color:white}
 .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .featured-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-.card{overflow:hidden;border:1px solid var(--line);border-radius:8px;background:white}
+.card{overflow:hidden;border:1px solid var(--line);border-radius:8px;background:white;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 24px #392b6218}
 .product-art{height:200px;overflow:hidden;background:#f0eaf8}
 .product-art img{width:100%;height:100%;object-fit:cover;display:block}
 .card-content{padding:16px}
