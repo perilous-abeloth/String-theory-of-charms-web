@@ -1,21 +1,54 @@
 (() => {
   const products = [
-    { id: 1, name: "Beaded Phone Lanyard",       type: "lanyard",   price: 80,  img: "phonelanyards.PNG",        icon: "📿", variants: ["Pastel Garden", "Midnight", "Lavender", "Cherry Red"],
-      desc: "Pastel floral and charm beads with a secure phone clip — pick your colors and vibe." },
-    { id: 2, name: "Butterfly Beaded Lanyard",   type: "lanyard",   price: 85,  img: "phonelanyards.PNG",        icon: "🦋", variants: ["Pastel Garden", "Midnight", "Lavender", "Cherry Red"],
-      desc: "Colorful beads with a dainty butterfly accent. A cute everyday carry for your phone." },
-    { id: 3, name: "Laptop Sleeve Strap",        type: "strap",     price: 120, img: "laptop_sleevestraps.png",  icon: "💻", variants: ["Lilac Daisy", "Midnight Galaxy", "Pastel Rainbow", "Olive Daisy"],
-      desc: "Embroidered strap with star and daisy details — fits most laptop sleeves and bags." },
-    { id: 4, name: "Galaxy Laptop Strap",        type: "strap",     price: 130, img: "laptop_sleevestraps.png",  icon: "🌙", variants: ["Midnight Galaxy", "Lilac Daisy", "Pastel Rainbow", "Olive Daisy"],
-      desc: "Black woven strap with planet and moon embroidery. Sleek and space-themed." },
-    { id: 5, name: "Cable Organizer",            type: "organizer", price: 50,  img: "cable_organizers.png",     icon: "🎀", variants: ["Lilac Star", "Blush Heart", "Black Star", "Sky Blue", "Sage Clover", "Lavender Daisy"],
-      desc: "Velcro wrap with a floral or heart patch to keep your charging cables tangle-free." },
-    { id: 6, name: "Headphone Organizer",        type: "organizer", price: 55,  img: "headphone_organizers.png", icon: "🎧", variants: ["Blush Bear", "Lilac Daisy", "Midnight Star", "Sky Blue", "Sage Clover", "Blush Bow"],
-      desc: "Wrap up your earphones neatly with a pastel velcro organizer — daisies, bears, or stars." },
-    { id: 7, name: "Woven Friendship Bracelet",  type: "woven",     price: 70,  img: "woven_bracelets.PNG",      icon: "🧵", variants: ["Purple & White", "Pastel Pink", "Black & Silver", "Rainbow Pastel", "Blue & White", "Mint Floral"],
-      desc: "Braided in pastel or bold shades with a charm dangle. Perfect for matching with friends." },
-    { id: 8, name: "Custom Theme Set",           type: "bundle",    price: 250, img: "custom_set.PNG",           icon: "✨", variants: ["Pastel Mix", "Galaxy", "Garden", "Custom colors"],
-      desc: "Mix-and-match set: phone lanyard + cable organizer + bracelet in one coordinated theme." },
+    { id: 1, name: "Beaded Phone Charm", type: "lanyard", price: 80, variants: [
+      { name: "Turquoise Beads", image: "product/2.png" },
+    ], desc: "Colorful beaded wrist strap to add a little personality to your phone." },
+    { id: 2, name: "Floral Desk Mirror", type: "mirror", price: 120, variants: [
+      { name: "Pink Petal", image: "product/3.png" },
+      { name: "Orange Blossom", image: "product/4.png" },
+      { name: "Rose Bouquet", image: "product/5.png" },
+      { name: "Teal Bouquet", image: "product/6.png" },
+      { name: "Pink Garden", image: "product/7.png" },
+      { name: "Teal Daisy", image: "product/8.png" },
+      { name: "Pink Floral", image: "product/9.png" },
+      { name: "Golden Flower", image: "product/10.png" },
+      { name: "Blue Bouquet", image: "product/11.png" },
+      { name: "Yellow Daisy", image: "product/12.png" },
+      { name: "Turquoise Garden", image: "product/13.png" },
+    ], desc: "A handmade mirror decorated with a colorful floral design. Choose your favorite style." },
+    { id: 3, name: "Decorative Hair Clips", type: "clips", price: 50, variants: [
+      { name: "Yellow Chick Clips", image: "product/1.png" },
+      { name: "Blue Heart Clips", image: "product/16.png" },
+      { name: "Red Bunny Clips", image: "product/17.png" },
+      { name: "Cherry Clips", image: "product/18.png" },
+      { name: "Teal Bunny Clips", image: "product/19.png" },
+      { name: "Turquoise Bow Clips", image: "product/20.png" },
+      { name: "Blue Gray Heart Clips", image: "product/21.png" },
+      { name: "Yellow Blue Heart Clips", image: "product/22.png" },
+      { name: "Mixed Bow Clips", image: "product/24.png" },
+      { name: "Multicolor Heart Clips", image: "product/25.png" },
+      { name: "Pink Blossom Clips", image: "product/27.png" },
+      { name: "Red Yellow Bow Clips", image: "product/28.png" },
+      { name: "Cherry Vine Clips", image: "product/29.png" },
+      { name: "Orange Flower Clips", image: "product/30.png" },
+      { name: "Blue Yellow Heart Clips", image: "product/32.png" },
+      { name: "Primary Color Heart Clips", image: "product/33.png" },
+    ], desc: "Soft, playful handmade clips in a range of colorful designs." },
+    { id: 4, name: "Cable Organizer", type: "organizer", price: 50, variants: [
+      { name: "Pastel Cable Wrap", image: "product/26.png" },
+    ], desc: "A handy wrap to keep cables together and easy to find." },
+    { id: 5, name: "Striped Flower Vase", type: "decor", price: 120, variants: [
+      { name: "Red and White Flowers", image: "product/14.png" },
+    ], desc: "A cheerful handmade flower arrangement in a striped vase." },
+    { id: 6, name: "Pink Flower Accessory", type: "decor", price: 70, variants: [
+      { name: "Pink Flower", image: "product/15.png" },
+    ], desc: "A small, flower-shaped handmade accessory." },
+    { id: 7, name: "Pom-Pom Charm", type: "decor", price: 55, variants: [
+      { name: "Green Pom-Pom", image: "product/23.png" },
+    ], desc: "A fluffy green charm with a handmade look." },
+    { id: 8, name: "Floral Ring Charm", type: "decor", price: 70, variants: [
+      { name: "Red and White Flowers", image: "product/31.png" },
+    ], desc: "A round floral handmade charm with a hanging loop." },
   ];
   const storageKey = "string-theory-cart";
 
@@ -26,7 +59,7 @@
       return saved.map((item) => {
         const product = products.find((entry) => entry.id === Number(item.id));
         const qty = Math.floor(Number(item.qty));
-        const option = product?.variants.includes(item.option) ? item.option : product?.variants[0];
+        const option = product?.variants.some((variant) => variant.name === item.option) ? item.option : product?.variants[0].name;
         return product && qty > 0 ? { id: product.id, option, qty } : null;
       }).filter(Boolean);
     } catch {
@@ -41,6 +74,10 @@
 
   function formatPrice(amount) {
     return `₱${amount.toLocaleString("en-PH")}`;
+  }
+
+  function getVariant(product, option) {
+    return product.variants.find((variant) => variant.name === option) || product.variants[0];
   }
 
   function updateBadge(cart = readCart()) {
@@ -72,7 +109,7 @@
     const shown = products.filter((product) => activeFilter === "all" || product.type === activeFilter);
     grid.innerHTML = shown.map((product) => renderProductCard(product)).join("");
     const count = document.querySelector("[data-result-count]");
-    if (count) count.textContent = `${shown.length} ${shown.length === 1 ? "item" : "handmade favorites"}`;
+    if (count) count.textContent = `${shown.length} ${shown.length === 1 ? "item" : "items"}`;
     const empty = document.querySelector("[data-products-empty]");
     if (empty) empty.hidden = shown.length > 0;
   }
@@ -81,7 +118,7 @@
     return `
       <article class="card">
         <div class="product-art">
-          <img src="${product.img}" alt="${product.name}">
+          <img src="${product.variants[0].image}" alt="${product.name} - ${product.variants[0].name}">
         </div>
         <div class="card-content">
           <h3>${product.name}</h3>
@@ -90,7 +127,7 @@
           <label class="variant-field">
             <span>Color / style</span>
             <select data-product-variant="${product.id}" aria-label="Color or style for ${product.name}">
-              ${product.variants.map((variant) => `<option value="${variant}">${variant}</option>`).join("")}
+              ${product.variants.map((variant) => `<option value="${variant.name}">${variant.name}</option>`).join("")}
             </select>
           </label>
           <button class="add" type="button" data-add-to-cart="${product.id}">Add to Cart</button>
@@ -113,7 +150,7 @@
     const productsInCart = cart.map((item) => ({ ...products.find((product) => product.id === item.id), option: item.option, qty: item.qty }));
     list.innerHTML = productsInCart.map((product) => `
       <article class="cart-row">
-        <div class="cart-item-icon"><img src="${product.img}" alt="${product.name}"></div>
+        <div class="cart-item-icon"><img src="${getVariant(product, product.option).image}" alt="${product.name} - ${product.option}"></div>
         <div class="cart-item-info"><h2>${product.name}</h2><p>${product.option}</p><p>${product.desc}</p><button class="text-button" type="button" data-cart-action="remove" data-product-id="${product.id}" data-product-option="${product.option}">Remove</button></div>
         <div class="quantity-control" aria-label="Quantity for ${product.name}">
           <button type="button" aria-label="Decrease ${product.name} quantity" data-cart-action="decrease" data-product-id="${product.id}" data-product-option="${product.option}">−</button>
@@ -203,8 +240,10 @@
           if (name !== "submit") lines.push(`${name}: ${value}`);
         }
         const subject = isOrder ? "String Theory of Charms order request" : "String Theory of Charms inquiry";
-        const email = `mailto:cecitdepartment@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines.join("\n"))}`;
-        notify("Opening your email app with the details. Your cart will stay saved.");
+        const customerEmail = fields.get("Email");
+        const copy = isOrder && customerEmail ? `&cc=${encodeURIComponent(customerEmail)}` : "";
+        const email = `mailto:stringtheoryofcharms@gmail.com?subject=${encodeURIComponent(subject)}${copy}&body=${encodeURIComponent(lines.join("\n"))}`;
+        notify(isOrder ? "Opening your email app with the order details and your address copied." : "Opening your email app with the message details.");
         window.location.href = email;
       });
     });
@@ -219,6 +258,16 @@
     }
     const cartButton = event.target.closest("[data-cart-action]");
     if (cartButton) updateQuantity(Number(cartButton.dataset.productId), cartButton.dataset.productOption, cartButton.dataset.cartAction);
+  });
+
+  document.addEventListener("change", (event) => {
+    const variantSelect = event.target.closest("[data-product-variant]");
+    if (!variantSelect) return;
+    const product = products.find((entry) => entry.id === Number(variantSelect.dataset.productVariant));
+    const variant = getVariant(product, variantSelect.value);
+    const image = variantSelect.closest(".card").querySelector(".product-art img");
+    image.src = variant.image;
+    image.alt = `${product.name} - ${variant.name}`;
   });
 
   document.addEventListener("DOMContentLoaded", () => {
