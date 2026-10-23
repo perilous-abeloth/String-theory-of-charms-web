@@ -11,6 +11,12 @@ a{color:inherit}
 .hero-banner{width:100%;height:auto;display:block;object-fit:contain}
 .benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:25px clamp(20px,7vw,100px);background:#fffafc}
 .benefit{display:flex;align-items:center;gap:12px;font-size:13px}
+.promo-video-section video {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 .benefit b{display:block;color:var(--deep);margin-bottom:5px}
 .benefit .ico{font-size:26px;color:var(--purple)}
 section.products{padding:45px clamp(20px,6vw,90px)}
