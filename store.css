@@ -11,16 +11,11 @@ a{color:inherit}
 .hero-banner{width:100%;height:auto;display:block;object-fit:contain}
 .benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:25px clamp(20px,7vw,100px);background:#fffafc}
 .benefit{display:flex;align-items:center;gap:12px;font-size:13px}
-.promo-video-section video {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
 .benefit b{display:block;color:var(--deep);margin-bottom:5px}
 .benefit .ico{font-size:25px;color:var(--purple)}
 section.products{padding:45px clamp(20px,6vw,90px)}
 .section-head{display:flex;align-items:center;justify-content:space-between}
+.promo-video-section video {width: 100%;height: auto;display: block;margin: 0 auto;}
 .section-head h2{font-size:32px;color:var(--deep);margin:0 0 24px}
 .grid-home{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .card:nth-child(2n) .product-art{background:linear-gradient(135deg,#f8e9e0,#e6ddf1)}
