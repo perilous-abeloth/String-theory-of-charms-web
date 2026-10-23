@@ -18,7 +18,7 @@ a{color:inherit}
   margin: 0 auto;
 }
 .benefit b{display:block;color:var(--deep);margin-bottom:5px}
-.benefit .ico{font-size:26px;color:var(--purple)}
+.benefit .ico{font-size:25px;color:var(--purple)}
 section.products{padding:45px clamp(20px,6vw,90px)}
 .section-head{display:flex;align-items:center;justify-content:space-between}
 .section-head h2{font-size:32px;color:var(--deep);margin:0 0 24px}
