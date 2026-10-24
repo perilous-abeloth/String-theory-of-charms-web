@@ -107,7 +107,8 @@ section.products{padding:45px clamp(20px,6vw,90px)}
 .promo{padding:20px clamp(20px,6vw,90px) 8px;text-align:center;background:#fffafc}
 .promo-head{justify-content:center}
 .promo-head h2{margin:0 0 12px}
-.promo-video{display:block;width:100%;max-width:960px;max-height:calc(100vh - 330px);max-height:calc(100svh - 330px);height:auto;object-fit:contain;margin:0 auto;border-radius:12px;background:#000;box-shadow:0 10px 30px #392b6226}
+
+.promo-video{display: block;width: min(100%, 360px);height: min(640px, calc(100vh - 240px));aspect-ratio: 9 / 16;object-fit: contain;margin: 0 auto;border-radius: 12px;background: #000;box-shadow: 0 10px 30px #392b6226;}
 .showcase{padding:45px 0 60px;overflow:hidden}
 .showcase .section-head{padding:0 clamp(20px,6vw,90px)}
 .showcase .section-head h2{margin-bottom:24px}
